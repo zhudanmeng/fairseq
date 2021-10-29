@@ -97,6 +97,8 @@ void bleu_addngram(
 }
 
 extern "C" {
+    
+ __declspec(dllexport)
 
 void bleu_zero_init(bleu_stat* stat) {
   std::memset(stat, 0, sizeof(bleu_stat));
